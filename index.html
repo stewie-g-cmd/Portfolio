@@ -11,14 +11,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
   
   <!-- Custom External Stylesheet -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- ==========================================
-       NAVIGATION LANDMARK
+       FIXED NAVIGATION BAR
        ========================================== -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-secondary" aria-label="Main Navigation">
+  <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Main Navigation">
     <div class="container">
       <a class="navbar-brand fw-bold text-accent" href="#">Stuart Jaftha</a>
       
@@ -28,12 +28,12 @@
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item">
-            <a class="btn btn-outline-info btn-sm ms-lg-3" href="https://github.com/stewie-g-cmd" target="_blank" rel="noopener">
+            <a class="btn btn-accent btn-sm ms-lg-3 px-3 py-1 mt-2 mt-lg-0" href="https://github.com/stewie-g-cmd" target="_blank" rel="noopener">
               <i class="bi bi-github"></i> GitHub Profile
             </a>
           </li>
@@ -49,15 +49,15 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-8">
-          <h1 class="display-4 fw-bold text-main">Hi, I'm <span class="text-accent">Stuart Jaftha</span></h1>
-          <p class="lead mt-3 hero-description">
+          <h1 class="display-4 fw-bold text-white">Hi, I'm <span class="text-accent">Stuart Jaftha</span></h1>
+          <p class="lead mt-3 text-white">
             Full-Stack Web Development student focused on building clean, accessible HTML5/CSS3 layouts, modern JavaScript applications, and responsive UI components.
           </p>
-          <div class="mt-4">
-            <a href="https://github.com/stewie-g-cmd" target="_blank" rel="noopener" class="btn btn-accent btn-lg me-2">
+          <div class="mt-4 d-flex flex-wrap gap-2">
+            <a href="https://github.com/stewie-g-cmd" target="_blank" rel="noopener" class="btn btn-lg hero-btn active">
               <i class="bi bi-github"></i> View Repositories
             </a>
-            <a href="#projects" class="btn btn-outline-light btn-lg">Explore Projects</a>
+            <a href="#projects" class="btn btn-lg hero-btn">Explore Projects</a>
           </div>
         </div>
       </div>
@@ -69,47 +69,47 @@
        ========================================== -->
   <main>
 
-    <!-- EXPERIENCE SECTION (Semantic Articles) -->
-    <section class="py-5 bg-dark border-top border-secondary" id="experience">
+    <!-- EXPERIENCE SECTION -->
+    <section class="py-5" id="experience">
       <div class="container">
         <header class="mb-4 border-bottom border-secondary pb-2">
-          <h2 class="fw-bold text-main m-0">
+          <h2 class="fw-bold text-white m-0">
             <i class="bi bi-person-badge text-accent me-2"></i>My Background & Experience
           </h2>
         </header>
-        <p class="text-muted mb-4">
+        <p class="text-white mb-4">
           Before I started writing code, my discipline, focus, and work ethic were forged out in the field and on the field. Here is how my background shapes the way I approach development:
         </p>
 
         <div class="row g-4">
           <!-- Scouts Article -->
-          <div class="col-md-6 col-lg-4">
-            <article class="p-4 border rounded card-article h-100">
+          <div class="col-md-6 col-lg-4 d-flex">
+            <article class="card-article w-100">
               <i class="bi bi-compass text-accent fs-3 mb-3 d-block"></i>
-              <h3 class="fw-bold fs-5 mb-2">13 Years in Scouts</h3>
-              <p class="small mb-0">
+              <h3 class="fw-bold fs-5 mb-2 text-white">13 Years in Scouts</h3>
+              <p class="small mb-0 text-white">
                 I spent 13 years in scouts, where I learned practical, hands-on self-reliance, problem-solving, and how to navigate complex challenges using maps and compasses when things don't go according to plan.
               </p>
             </article>
           </div>
 
           <!-- Archery Article -->
-          <div class="col-md-6 col-lg-4">
-            <article class="p-4 border rounded card-article h-100">
+          <div class="col-md-6 col-lg-4 d-flex">
+            <article class="card-article w-100">
               <i class="bi bi-bullseye text-accent fs-3 mb-3 d-block"></i>
-              <h3 class="fw-bold fs-5 mb-2">Archery A-Team & Leadership</h3>
-              <p class="small mb-0">
+              <h3 class="fw-bold fs-5 mb-2 text-white">Archery A-Team & Leadership</h3>
+              <p class="small mb-0 text-white">
                 I competed on our high school's archery A team, helped mentor and oversee junior team members, and earned next-in-line status for team captaincy. It taught me absolute precision, consistency, and how to support the people around me.
               </p>
             </article>
           </div>
 
           <!-- Hockey Article -->
-          <div class="col-md-6 col-lg-4">
-            <article class="p-4 border rounded card-article h-100">
+          <div class="col-md-6 col-lg-4 d-flex">
+            <article class="card-article w-100">
               <i class="bi bi-shield-shaded text-accent fs-3 mb-3 d-block"></i>
-              <h3 class="fw-bold fs-5 mb-2">High School Hockey (Left Wing)</h3>
-              <p class="small mb-0">
+              <h3 class="fw-bold fs-5 mb-2 text-white">High School Hockey (Left Wing)</h3>
+              <p class="small mb-0 text-white">
                 Playing left wing in high school hockey taught me how to read the field fast, execute under pressure, and work seamlessly with a team to push the pace and secure results.
               </p>
             </article>
@@ -118,16 +118,16 @@
       </div>
     </section>
 
-    <!-- PROJECTS SECTION (Semantic Section & Table) -->
+    <!-- PROJECTS SECTION -->
     <section id="projects" class="py-5 border-top border-secondary">
       <div class="container">
         <header class="mb-4 border-bottom border-secondary pb-2">
-          <h2 class="fw-bold text-main m-0">
-            <i class="bi bi-code-slash text-accent me-2"></i>Projects
+          <h2 class="fw-bold text-white m-0">
+            <i class="bi bi-code-slash text-accent me-2"></i>Projects & Qualifications
           </h2>
         </header>
 
-        <div class="table-responsive bg-slate border border-secondary rounded">
+        <div class="table-responsive border border-secondary rounded">
           <table class="table table-dark table-hover mb-0 align-middle">
             <thead>
               <tr class="text-accent border-secondary">
@@ -139,43 +139,56 @@
             </thead>
             <tbody>
               <tr>
-                <th scope="row" class="fw-bold text-main border-secondary">Community Tool Share Form</th>
-                <td class="text-muted border-secondary">An accessible form application built according to WCAG guidelines using semantic HTML5 and custom styles.</td>
+                <th scope="row" class="fw-bold text-white border-secondary">Professional Portfolio CV</th>
+                <td class="text-white border-secondary">Personal professional CV portfolio website utilizing a clean scannable layout and badge matrix for skills.</td>
                 <td class="border-secondary">
                   <span class="badge badge-tech me-1">HTML5</span>
                   <span class="badge badge-tech me-1">CSS3</span>
-                  <span class="badge badge-tech">WCAG</span>
+                  <span class="badge badge-tech">Bootstrap</span>
                 </td>
                 <td class="text-end border-secondary">
-                  <a href="https://github.com/stewie-g-cmd/community-tool-share" target="_blank" rel="noopener" class="btn btn-outline-info btn-sm">
+                  <a href="https://github.com/stewie-g-cmd/Portfolio" target="_blank" rel="noopener" class="btn btn-outline-info btn-sm">
                     <i class="bi bi-journal-code"></i> Code
                   </a>
                 </td>
               </tr>
               <tr>
-                <th scope="row" class="fw-bold text-main border-secondary">CSS Grid Periodic Table</th>
-                <td class="text-muted border-secondary">An interactive periodic table of elements showcasing advanced CSS Grid techniques and responsive design principles.</td>
+                <th scope="row" class="fw-bold text-white border-secondary">Online Store Application</th>
+                <td class="text-white border-secondary">E-commerce front-end application using Formik integration for user registration schema and strict criteria validation.</td>
                 <td class="border-secondary">
-                  <span class="badge badge-tech me-1">CSS Grid</span>
-                  <span class="badge badge-tech me-1">Flexbox</span>
-                  <span class="badge badge-tech">JavaScript</span>
-                </td>
-                <td class="text-end border-secondary">
-                  <a href="https://github.com/stewie-g-cmd/css-periodic-table" target="_blank" rel="noopener" class="btn btn-outline-info btn-sm">
-                    <i class="bi bi-journal-code"></i> Code
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row" class="fw-bold text-main border-secondary">Artist Showcase Portfolio</th>
-                <td class="text-muted border-secondary">A custom multi-section gallery platform designed for digital illustrators to present and license artwork.</td>
-                <td class="border-secondary">
-                  <span class="badge badge-tech me-1">Bootstrap 5</span>
                   <span class="badge badge-tech me-1">JavaScript</span>
-                  <span class="badge badge-tech">HTML5</span>
+                  <span class="badge badge-tech me-1">Formik</span>
+                  <span class="badge badge-tech">React</span>
                 </td>
                 <td class="text-end border-secondary">
-                  <a href="https://github.com/stewie-g-cmd/artist-portfolio" target="_blank" rel="noopener" class="btn btn-outline-info btn-sm">
+                  <a href="https://github.com/stewie-g-cmd" target="_blank" rel="noopener" class="btn btn-outline-info btn-sm">
+                    <i class="bi bi-journal-code"></i> Code
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="fw-bold text-white border-secondary">Full-Stack iTunes Search API</th>
+                <td class="text-white border-secondary">Secure full-stack web application deploying an Express backend, React frontend, Bootstrap components, and JWT authorization endpoints.</td>
+                <td class="border-secondary">
+                  <span class="badge badge-tech me-1">Node.js</span>
+                  <span class="badge badge-tech me-1">Express</span>
+                  <span class="badge badge-tech">JWT</span>
+                </td>
+                <td class="text-end border-secondary">
+                  <a href="https://github.com/stewie-g-cmd" target="_blank" rel="noopener" class="btn btn-outline-info btn-sm">
+                    <i class="bi bi-journal-code"></i> Code
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="fw-bold text-white border-secondary">Modular Banking Simulation</th>
+                <td class="text-white border-secondary">Engineered a modular banking system simulation application using shared-state management lifted to a parent component structure.</td>
+                <td class="border-secondary">
+                  <span class="badge badge-tech me-1">JavaScript</span>
+                  <span class="badge badge-tech">React</span>
+                </td>
+                <td class="text-end border-secondary">
+                  <a href="https://github.com/stewie-g-cmd" target="_blank" rel="noopener" class="btn btn-outline-info btn-sm">
                     <i class="bi bi-journal-code"></i> Code
                   </a>
                 </td>
@@ -186,18 +199,18 @@
       </div>
     </section>
 
-    <!-- SKILLS SECTION (Semantic Section & List) -->
-    <section id="skills" class="py-5 bg-dark border-top border-secondary">
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="py-5 border-top border-secondary">
       <div class="container">
         <header class="mb-4 border-bottom border-secondary pb-2">
-          <h2 class="fw-bold text-main m-0">
+          <h2 class="fw-bold text-white m-0">
             <i class="bi bi-tools text-accent me-2"></i>Technical Skills
           </h2>
         </header>
 
         <div class="row g-4">
           <section class="col-md-4">
-            <h3 class="text-muted text-uppercase small fw-bold mb-3 fs-6">Frontend & UI</h3>
+            <h3 class="text-white text-uppercase small fw-bold mb-3 fs-6">Frontend & UI</h3>
             <ul class="list-unstyled d-flex flex-wrap gap-2 m-0">
               <li><span class="pill-badge"><i class="bi bi-filetype-html text-accent me-2"></i>Semantic HTML5</span></li>
               <li><span class="pill-badge"><i class="bi bi-filetype-css text-accent me-2"></i>CSS3 / Flexbox / Grid</span></li>
@@ -208,7 +221,7 @@
           </section>
 
           <section class="col-md-4">
-            <h3 class="text-muted text-uppercase small fw-bold mb-3 fs-6">Backend & Database</h3>
+            <h3 class="text-white text-uppercase small fw-bold mb-3 fs-6">Backend & Database</h3>
             <ul class="list-unstyled d-flex flex-wrap gap-2 m-0">
               <li><span class="pill-badge"><i class="bi bi-server text-accent me-2"></i>Node.js</span></li>
               <li><span class="pill-badge"><i class="bi bi-database text-accent me-2"></i>Databases & SQL</span></li>
@@ -217,7 +230,7 @@
           </section>
 
           <section class="col-md-4">
-            <h3 class="text-muted text-uppercase small fw-bold mb-3 fs-6">Tools & Workflow</h3>
+            <h3 class="text-white text-uppercase small fw-bold mb-3 fs-6">Tools & Workflow</h3>
             <ul class="list-unstyled d-flex flex-wrap gap-2 m-0">
               <li><span class="pill-badge"><i class="bi bi-git text-accent me-2"></i>Git Version Control</span></li>
               <li><span class="pill-badge"><i class="bi bi-github text-accent me-2"></i>GitHub Repositories</span></li>
@@ -233,13 +246,24 @@
   <!-- ==========================================
        FOOTER LANDMARK
        ========================================== -->
-  <footer class="py-4 text-center border-top border-secondary text-muted">
+  <footer class="py-4 text-center border-top border-secondary">
     <div class="container">
-      <p class="mb-0 text-muted">Stuart Jaftha &copy; 2026</p>
+      <p class="mb-0 text-white">Stuart Jaftha &copy; 2026</p>
     </div>
   </footer>
 
   <!-- Bootstrap 5 JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Toggle highlight between Hero buttons when clicked -->
+  <script>
+    const heroButtons = document.querySelectorAll('.hero-btn');
+    heroButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        heroButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+  </script>
 </body>
 </html>

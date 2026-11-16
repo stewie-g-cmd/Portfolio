@@ -1,152 +1,125 @@
 /* ==========================================
-   GLOBAL VARIABLES & THEME CONFIGURATION
+   UNIFORM DARK THEME & LAYOUT FIXES
    ========================================== */
-:root {
-  --bg-dark: #0f172a;       /* Deep slate background */
-  --bg-slate: #1e293b;      /* Slate container background */
-  --accent: #38bdf8;        /* Cyan highlight accent */
-  --text-main: #f8fafc;     /* Bright, high-contrast primary text */
-  --text-muted: #cbd5e1;    /* High-readability muted text */
-  --border-color: #475569;  /* Crisp border color */
-}
-
-/* Base Body Styling */
-body {
-  background-color: var(--bg-dark);
-  color: var(--text-main);
+html, body {
+  background-color: #1e293b !important;
+  color: #ffffff !important;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  /* Adds top padding so content never gets hidden behind the fixed navbar banner */
-  padding-top: 76px; 
+  padding: 0;
+  padding-top: 85px; /* Pushes page content down so fixed header never overlaps */
 }
 
-/* Ensure all standard text elements inherit proper contrast */
-p, li, span, th, td {
-  color: var(--text-muted);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: var(--text-main);
-}
-
-/* ==========================================
-   NAVIGATION / BANNER BAR STYLES
-   (Fixed to top, stays neat and responsive)
-   ========================================== */
+/* Fixed Solid Header (Stays at the top on scroll) */
 .navbar {
-  background-color: var(--bg-dark) !important;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  background-color: #1e293b !important;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  z-index: 9999 !important;
+  border-bottom: 1px solid #334155;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .navbar-brand, .nav-link {
-  color: var(--text-main) !important;
+  color: #ffffff !important;
 }
 
-.nav-link:hover {
-  color: var(--accent) !important;
+.nav-link:hover, .nav-link.active {
+  color: #38bdf8 !important;
 }
 
-/* ==========================================
-   HERO SECTION STYLES
-   ========================================== */
+/* Hero Section */
 .hero-section {
-  padding: 60px 0 50px;
-  background: linear-gradient(180deg, rgba(56, 189, 248, 0.08) 0%, rgba(15, 23, 42, 1) 100%);
+  background-color: #1e293b !important;
+  padding: 4rem 0;
+  border-bottom: 1px solid #334155;
 }
 
-.hero-description {
-  max-width: 650px;
-  color: var(--text-muted);
+/* Hero Tab Buttons */
+.hero-btn {
+  font-weight: 600;
+  transition: all 0.2s ease;
 }
 
-/* ==========================================
-   SEMANTIC ARTICLE / CARD STYLES (EXPERIENCE)
-   ========================================== */
-.bg-slate {
-  background-color: var(--bg-slate);
+.hero-btn.active {
+  background-color: #38bdf8 !important;
+  color: #0f172a !important;
+  border-color: #38bdf8 !important;
+}
+
+.hero-btn:not(.active) {
+  background-color: #0f172a !important;
+  color: #ffffff !important;
+  border: 1px solid #475569 !important;
+}
+
+.hero-btn:not(.active):hover {
+  border-color: #38bdf8 !important;
+  color: #38bdf8 !important;
+}
+
+/* Sections & Uniform Cards */
+section {
+  background-color: #1e293b !important;
 }
 
 article.card-article {
-  background-color: var(--bg-slate);
-  border: 1px solid var(--border-color);
-  color: var(--text-main);
-  transition: border-color 0.2s ease, transform 0.2s ease;
+  background-color: #1e293b !important;
+  border: 1px solid #334155 !important;
+  color: #ffffff !important;
+  display: flex;
+  flex-direction: column;
+  height: 100% !important;
+  padding: 2rem;
+  border-radius: 0.5rem;
 }
 
-article.card-article:hover {
-  border-color: var(--accent);
-  transform: translateY(-2px);
-}
-
-article.card-article h3 {
-  color: var(--text-main);
-}
-
+article.card-article h3,
 article.card-article p {
-  color: var(--text-muted);
+  color: #ffffff !important;
 }
 
-/* ==========================================
-   TABLE / PROJECT LIST STYLES
-   ========================================== */
+/* Projects Table & Skills Badges */
 .table-dark {
-  --bs-table-bg: var(--bg-slate);
-  --bs-table-border-color: var(--border-color);
-  color: var(--text-main);
+  --bs-table-bg: #1e293b !important;
+  --bs-table-border-color: #334155 !important;
+  color: #ffffff !important;
 }
 
 .table-hover tbody tr:hover {
-  background-color: rgba(56, 189, 248, 0.05);
+  background-color: rgba(56, 189, 248, 0.08) !important;
 }
 
-.text-main {
-  color: var(--text-main) !important;
-}
-
-/* Inline Technology Badges */
 .badge-tech {
-  background-color: var(--border-color);
-  color: var(--accent);
-  font-weight: 500;
-  font-size: 0.75rem;
+  background-color: #334155 !important;
+  color: #38bdf8 !important;
 }
 
-/* ==========================================
-   BADGE MATRIX (SKILLS) STYLES
-   ========================================== */
 .pill-badge {
   display: inline-flex;
   align-items: center;
-  background-color: var(--bg-slate);
-  border: 1px solid var(--border-color);
-  color: var(--text-main);
+  background-color: #1e293b !important;
+  border: 1px solid #334155 !important;
+  color: #ffffff !important;
   padding: 0.5rem 1rem;
   border-radius: 50rem;
   font-size: 0.9rem;
-  font-weight: 500;
-  transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
-.pill-badge:hover {
-  border-color: var(--accent);
-  transform: translateY(-2px);
-}
-
-/* ==========================================
-   ACCENT & BUTTON UTILITIES
-   ========================================== */
 .text-accent {
-  color: var(--accent);
+  color: #38bdf8 !important;
 }
 
 .btn-accent {
-  background-color: var(--accent);
-  color: #0f172a;
+  background-color: #38bdf8 !important;
+  color: #0f172a !important;
   font-weight: 600;
-  border: none;
 }
 
-.btn-accent:hover {
-  background-color: #7dd3fc;
-  color: #0f172a;
+footer {
+  background-color: #1e293b !important;
+  border-top: 1px solid #334155;
 }
