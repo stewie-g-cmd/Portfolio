@@ -6,7 +6,7 @@
   --bg-slate: #1e293b;      /* Slate container background */
   --accent: #38bdf8;        /* Cyan highlight accent */
   --text-main: #f8fafc;     /* Bright, high-contrast primary text */
-  --text-muted: #cbd5e1;    /* Lighter muted text for high readability */
+  --text-muted: #cbd5e1;    /* High-readability muted text */
   --border-color: #475569;  /* Crisp border color */
 }
 
@@ -15,14 +15,27 @@ body {
   background-color: var(--bg-dark);
   color: var(--text-main);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding-top: 56px;
+  margin: 0;
+  /* Adds top padding so content never gets hidden behind the fixed navbar banner */
+  padding-top: 76px; 
+}
+
+/* Ensure all standard text elements inherit proper contrast */
+p, li, span, th, td {
+  color: var(--text-muted);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-main);
 }
 
 /* ==========================================
-   NAVIGATION BAR STYLES
+   NAVIGATION / BANNER BAR STYLES
+   (Fixed to top, stays neat and responsive)
    ========================================== */
 .navbar {
   background-color: var(--bg-dark) !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
 }
 
 .navbar-brand, .nav-link {
@@ -37,7 +50,7 @@ body {
    HERO SECTION STYLES
    ========================================== */
 .hero-section {
-  padding: 90px 0 60px;
+  padding: 60px 0 50px;
   background: linear-gradient(180deg, rgba(56, 189, 248, 0.08) 0%, rgba(15, 23, 42, 1) 100%);
 }
 
@@ -56,7 +69,7 @@ body {
 article.card-article {
   background-color: var(--bg-slate);
   border: 1px solid var(--border-color);
-  color: #ffffff;
+  color: var(--text-main);
   transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
@@ -66,11 +79,11 @@ article.card-article:hover {
 }
 
 article.card-article h3 {
-  color: #ffffff;
+  color: var(--text-main);
 }
 
 article.card-article p {
-  color: #ffffff;
+  color: var(--text-muted);
 }
 
 /* ==========================================
