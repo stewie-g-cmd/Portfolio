@@ -1,0 +1,139 @@
+/* ==========================================
+   GLOBAL VARIABLES & THEME CONFIGURATION
+   ========================================== */
+:root {
+  --bg-dark: #0f172a;       /* Deep slate background */
+  --bg-slate: #1e293b;      /* Slate container background */
+  --accent: #38bdf8;        /* Cyan highlight accent */
+  --text-main: #f8fafc;     /* Bright, high-contrast primary text */
+  --text-muted: #cbd5e1;    /* Lighter muted text for high readability */
+  --border-color: #475569;  /* Crisp border color */
+}
+
+/* Base Body Styling */
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 56px;
+}
+
+/* ==========================================
+   NAVIGATION BAR STYLES
+   ========================================== */
+.navbar {
+  background-color: var(--bg-dark) !important;
+}
+
+.navbar-brand, .nav-link {
+  color: var(--text-main) !important;
+}
+
+.nav-link:hover {
+  color: var(--accent) !important;
+}
+
+/* ==========================================
+   HERO SECTION STYLES
+   ========================================== */
+.hero-section {
+  padding: 90px 0 60px;
+  background: linear-gradient(180deg, rgba(56, 189, 248, 0.08) 0%, rgba(15, 23, 42, 1) 100%);
+}
+
+.hero-description {
+  max-width: 650px;
+  color: var(--text-muted);
+}
+
+/* ==========================================
+   SEMANTIC ARTICLE / CARD STYLES (EXPERIENCE)
+   ========================================== */
+.bg-slate {
+  background-color: var(--bg-slate);
+}
+
+article.card-article {
+  background-color: var(--bg-slate);
+  border: 1px solid var(--border-color);
+  color: #ffffff;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+article.card-article:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+article.card-article h3 {
+  color: #ffffff;
+}
+
+article.card-article p {
+  color: #ffffff;
+}
+
+/* ==========================================
+   TABLE / PROJECT LIST STYLES
+   ========================================== */
+.table-dark {
+  --bs-table-bg: var(--bg-slate);
+  --bs-table-border-color: var(--border-color);
+  color: var(--text-main);
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(56, 189, 248, 0.05);
+}
+
+.text-main {
+  color: var(--text-main) !important;
+}
+
+/* Inline Technology Badges */
+.badge-tech {
+  background-color: var(--border-color);
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+/* ==========================================
+   BADGE MATRIX (SKILLS) STYLES
+   ========================================== */
+.pill-badge {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--bg-slate);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 0.5rem 1rem;
+  border-radius: 50rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.pill-badge:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* ==========================================
+   ACCENT & BUTTON UTILITIES
+   ========================================== */
+.text-accent {
+  color: var(--accent);
+}
+
+.btn-accent {
+  background-color: var(--accent);
+  color: #0f172a;
+  font-weight: 600;
+  border: none;
+}
+
+.btn-accent:hover {
+  background-color: #7dd3fc;
+  color: #0f172a;
+}
